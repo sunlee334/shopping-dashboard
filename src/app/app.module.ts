@@ -11,6 +11,9 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 
 import { ChartsModule } from 'ng2-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -20,14 +23,18 @@ import { ChartsModule } from 'ng2-charts';
     DoughnutChartComponent,
     RadarChartComponent,
     PieChartComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    FlexLayoutModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}
