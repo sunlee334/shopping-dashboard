@@ -6,9 +6,13 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ConversionDashboardComponent } from './conversion-dashboard/conversion-dashboard.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'line-chart' },
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'conversion-dashboard', component: ConversionDashboardComponent },
   { path: 'line-chart', component: LineChartComponent },
   { path: 'bar-chart', component: BarChartComponent },
   { path: 'doughnut-chart', component: DoughnutChartComponent },

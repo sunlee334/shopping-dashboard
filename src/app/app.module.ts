@@ -12,8 +12,20 @@ import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 
 import { ChartsModule } from 'ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material';
+import { MatSliderModule, MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { LayoutComponent } from './layout/layout.component';
+import { ConversionDashboardComponent } from './conversion-dashboard/conversion-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +36,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     RadarChartComponent,
     PieChartComponent,
     BubbleChartComponent,
+    NavbarComponent,
+    DashboardComponent,
+    LayoutComponent,
+    ConversionDashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +48,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     MatSliderModule,
     FlexLayoutModule,
+    MatToolbarModule,
+    LayoutModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
