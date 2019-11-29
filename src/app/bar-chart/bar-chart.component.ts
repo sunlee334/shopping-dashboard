@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
-import { Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-bar-chart',
@@ -9,11 +8,10 @@ import { Label } from 'ng2-charts';
 })
 
 export class BarChartComponent {
-
+  @Input() props;
   barChartOptions: ChartOptions = {
     responsive: true,
   };
-  barChartLabels: Label[] = ['Apple', 'Banana', 'Kiwifruit', 'Blueberry', 'Orange', 'Grapes'];
   barChartType: ChartType = 'bar';
   barChartLegend = true;
   barChartPlugins = [];

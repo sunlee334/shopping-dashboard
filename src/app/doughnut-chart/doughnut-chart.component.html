@@ -1,7 +1,14 @@
-<div class="chart-wrapper">
-    <canvas baseChart 
-    [data]="doughnutChartData"
-    [labels]="doughnutChartLabels"
-    [chartType]="doughnutChartType">
-  </canvas>
-</div>
+<mat-card class="example-card" >
+  <mat-card-header>
+    <mat-card-title>{{props.title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="chart-wrapper">
+      <canvas baseChart
+              [data]="props.data"
+              [labels]="props.labels"
+              [chartType]="doughnutChartType">
+      </canvas>
+    </div>
+  </mat-card-content>
+</mat-card>

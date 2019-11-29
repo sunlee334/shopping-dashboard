@@ -8,21 +8,24 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ConversionDashboardComponent } from './conversion-dashboard/conversion-dashboard.component';
+import { BehaviorDashboardComponent } from './behavior-dashboard/behavior-dashboard.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  { path: '', pathMatch: 'full', redirectTo: 'conversion-dashboard' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'conversion-dashboard', component: ConversionDashboardComponent },
+  { path: 'behavior-dashboard', component: BehaviorDashboardComponent },
   { path: 'line-chart', component: LineChartComponent },
   { path: 'bar-chart', component: BarChartComponent },
   { path: 'doughnut-chart', component: DoughnutChartComponent },
   { path: 'radar-chart', component: RadarChartComponent },
   { path: 'pie-chart', component: PieChartComponent },
-  { path: 'bubble-chart', component: BubbleChartComponent }
+  { path: 'bubble-chart', component: BubbleChartComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
