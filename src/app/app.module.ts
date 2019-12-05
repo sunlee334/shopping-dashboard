@@ -34,12 +34,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { LayoutComponent } from './layout/layout.component';
 import { ConversionDashboardComponent } from './conversion-dashboard/conversion-dashboard.component';
-import { ProductRankComponent } from './product-rank/product-rank.component';
-import { DailyProductRankComponent } from './daily-product-rank/daily-product-rank.component';
 import { MatCardComponent } from './mat-card/mat-card.component';
 import { BehaviorDashboardComponent } from './behavior-dashboard/behavior-dashboard.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { ConversionPathComponent } from './conversion-path/conversion-path.component';
+import { ProductTransactionsComponent } from './product-transactions/product-transactions.component';
+import { DailyProductTransactionsComponent } from './daily-product-transactions/daily-product-transactions.component';
+import { ProductRevenueComponent } from './product-revenue/product-revenue.component';
+import { DailyProductRevenueComponent } from './daily-product-revenue/daily-product-revenue.component';
 
 @NgModule({
   declarations: [
@@ -54,12 +56,14 @@ import { ConversionPathComponent } from './conversion-path/conversion-path.compo
     DashboardComponent,
     LayoutComponent,
     ConversionDashboardComponent,
-    ProductRankComponent,
-    DailyProductRankComponent,
     MatCardComponent,
     BehaviorDashboardComponent,
     DatePickerComponent,
     ConversionPathComponent,
+    ProductTransactionsComponent,
+    DailyProductTransactionsComponent,
+    ProductRevenueComponent,
+    DailyProductRevenueComponent,
   ],
   imports: [
     BrowserModule,

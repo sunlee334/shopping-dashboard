@@ -19,11 +19,6 @@
         <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
       </ng-container>
 
-      <ng-container matColumnDef="판매액">
-        <th mat-header-cell *matHeaderCellDef> {{this._props.displayedColumns[3 ]}}</th>
-        <td mat-cell *matCellDef="let element"> {{element.revenue}} </td>
-      </ng-container>
-
       <tr mat-header-row *matHeaderRowDef="this._props.displayedColumns"></tr>
       <tr mat-row *matRowDef="let element; columns: this._props.displayedColumns;"></tr>
     </table>
