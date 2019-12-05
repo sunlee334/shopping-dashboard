@@ -13,6 +13,7 @@ import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
+  MatChipsModule,
   MatDatepickerModule,
   MatFormFieldModule, MatInputModule,
   MatSliderModule,
@@ -38,6 +39,7 @@ import { DailyProductRankComponent } from './daily-product-rank/daily-product-ra
 import { MatCardComponent } from './mat-card/mat-card.component';
 import { BehaviorDashboardComponent } from './behavior-dashboard/behavior-dashboard.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
+import { ConversionPathComponent } from './conversion-path/conversion-path.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,7 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
     MatCardComponent,
     BehaviorDashboardComponent,
     DatePickerComponent,
+    ConversionPathComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,6 +82,7 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
     MatDatepickerModule,
     MatTabsModule,
     MatInputModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
